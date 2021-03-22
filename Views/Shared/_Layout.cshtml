@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,28 +8,33 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+
+<body background="img/paes.png" class="img-fluid">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-danger border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand"style="background-color: yellow;">Pão Delivery fast</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" style="background-color: yellow;">Pão Delivery fast</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index">Página Principal</a>
+                            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index">Página
+                                Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Galeria">Galeria de Fotos</a>
+                            <a class="nav-link text-warning" asp-area="" asp-controller="Home"
+                                asp-action="Galeria">Galeria de Fotos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Formulario">Faça Seu Pedido</a>
+                            <a class="nav-link text-warning" asp-area="" asp-controller="Home"
+                                asp-action="Formulario">Faça Seu Pedido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Listagem">Listagem</a>
+                            <a class="nav-link text-warning" asp-area="" asp-controller="Home"
+                                asp-action="Listagem">Listagem</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +49,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - deliveryfast - <a asp-area="" asp-controller="Home" asp-action="Contato">Fale Conosco</a>
+            &copy; 2021 - deliveryfast - <a asp-area="" asp-controller="Home" asp-action="Contato"
+                class="btn btn-large btn-warning text-warning" style="background-color: red"
+                style="border-radius: 0.5em;" style="text-shadow: 2px 2xp 2px rgba(0,0,0,0,5)">Fale Conosco</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -51,4 +59,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>
